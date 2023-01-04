@@ -5,7 +5,8 @@ const path = require("path");
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
 
-const db = mysql.createConnection({
+const db = mysql.createPool({
+  connectionLimit: 10,
   host: "ecommercev2.cqwpxjxkqcuo.us-east-1.rds.amazonaws.com",
   user: "admin",
   password: "Richjenn014",
