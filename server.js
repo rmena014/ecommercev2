@@ -5,15 +5,14 @@ const path = require("path");
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
 
-const db = mysql.createPool({
-  connectionLimit: 10,
+const db = mysql.createConnection({
   host: "ecommercev2.cqwpxjxkqcuo.us-east-1.rds.amazonaws.com",
   user: "admin",
   password: "Richjenn014",
   database: "ecommerce",
 });
 
-db.getConnection((err) => {
+db.connect((err) => {
   if (err) {
     throw err;
   } else {
