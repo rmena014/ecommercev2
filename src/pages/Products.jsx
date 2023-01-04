@@ -13,8 +13,8 @@ function Products() {
 
   const getProducts = (category) => {
     const url = category
-      ? `https://ec2-44-204-54-44.compute-1.amazonaws.com/api/filtered${category}`
-      : "https://ec2-44-204-54-44.compute-1.amazonaws.com/api/allProducts";
+      ? `https://ec2-44-204-54-44.compute-1.amazonaws.com:4000/api/filtered${category}`
+      : "https://ec2-44-204-54-44.compute-1.amazonaws.com:4000/api/allProducts";
     axios
       .get(url, {})
       .then((response) => {
