@@ -13,7 +13,7 @@ const db = mysql.createPool({
   database: "ecommerce",
 });
 
-db.connect((err) => {
+db.getConnection((err) => {
   if (err) {
     throw err;
   } else {
