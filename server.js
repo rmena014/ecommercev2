@@ -81,6 +81,6 @@ app.get("/*", (req, res) => {
     res.status(500).send("Internal server error");
   }
 });
-app.listen(4000, () => {
-  console.log("Server started on port 4000");
+app.listen(3001, () => {
+  console.log("Server started on port 3001");
 });
