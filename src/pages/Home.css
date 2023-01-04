@@ -1,0 +1,167 @@
+.brand_info {
+    display: block;
+    padding: auto;
+  }
+  
+  .brand_vintage_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .brand_info img {
+    height: auto;
+    width: 50vw;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    margin-bottom: -80px;
+    padding: 0;
+  }
+  .info_heading {
+    display: flex;
+    justify-content: center;
+  }
+  .brand_info p,
+  .brand info h2 {
+    font-size: 2vw;
+    padding: 5px;
+    display: block;
+    padding-left: 5em;
+    padding-right: 5em;
+    text-align: center;
+  }
+  
+  .brand_info p {
+    font-family: "Istok Web", sans-serif;
+  }
+  
+  .vintage_img2 {
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+  
+  .vintage_img2 img {
+    height: auto;
+    width: 50vw;
+  }
+  .shopNowbttn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .shopbttn {
+    border: solid 2px black;
+    padding: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.9s ease-in-out;
+  }
+  .shopbttn:hover {
+    background-color: salmon;
+  }
+  .shopbttn a {
+    color: #2f2f2f;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 1s ease;
+    font-family: "Abril Fatface", cursive;
+  }
+  
+  .shopbttn a:hover {
+    color: antiquewhite;
+  }
+  
+  @media screen and (max-width: 831px) {
+    .nav_bar {
+      display: none;
+    }
+    .site_nav {
+      display: none;
+    }
+    .brand_vintage_img {
+      display: none;
+    }
+    .vintage_img2 {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .vintage_img2 img {
+      height: auto;
+      width: 60vw;
+    }
+    .nav__title {
+      font-weight: 400;
+      font-size: 7px;
+      display: flex;
+      justify-content: center;
+    }
+    .footer a {
+      text-decoration: none;
+      font-size: 12px;
+    }
+    .legal {
+      display: flex;
+      justify-content: center;
+    }
+    .legal p {
+      font-size: 10px;
+    }
+    .brand_info p,
+    h2 {
+      font-size: 4vw;
+      padding: 5px;
+      display: block;
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+    .shopbttn {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      margin: 0;
+    }
+    .shopbttn a {
+      font-size: 15px;
+    }
+    .left {
+      display: none;
+    }
+    .contactBox,
+    .container,
+    .field,
+    textarea {
+      width: 100%;
+      height: auto;
+      display: flex;
+      display: inline;
+    }
+    .field {
+      /* background-color: rgba(4, 160, 195, 0.766); */
+      border: solid 2px black;
+    }
+    .field:focus {
+      background-color: rgb(248, 153, 119);
+    }
+    ::placeholder {
+      color: rgb(0, 0, 0);
+    }
+    .submitBttn {
+      background-color: aliceblue;
+    }
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+
+  

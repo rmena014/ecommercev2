@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(17, 17, 17);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: red;
+  display: block;
+  transition: all 850ms ease;
+}
+
+.navbar a:hover {
+  color: orange;
+}
+
+.header {
+  background-color: red;
+  padding: 20px;
+  margin-left: -10px;
+  /* margin-right: -100%; */
+  margin-top: -10px;
+}
+
+.home_icon,
+.products_icon,
+.contact_icon {
+  padding-right: 10px;
+}
+
+.header .navbar .icon {
+  display: none;
+}
+
+@media screen and (max-height: 450px) {
+  .navbar {
+    padding-top: 15px;
+  }
+
+  .navbar a {
+    font-size: 18px;
+  }
+}
+
+.navbar.open {
+  transform: translateX(0);
+}
+
+.navbar.open .icon {
+  display: none;
+}
+
+.navbar.open a {
+  display: block;
+}
+
+.navbar {
+  transform: translateX(-100%);
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.X {
+  position: relative;
+}

@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(246, 8, 8, 0.55);
+  color: #fff;
+  padding: 16px;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.social-media-link {
+  font-size: 32px;
+  margin: 0 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: ease 0.5s all;
+}
+
+.social-media-link:hover {
+  color: #49d2ff;
+}
+
+.copyright {
+  font-size: 14px;
+}

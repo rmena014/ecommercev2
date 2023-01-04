@@ -1,0 +1,137 @@
+.product_card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 16px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: 0.5s ease all;
+  padding: 50px;
+}
+
+.product_card img {
+  width: 300px;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 16px;
+}
+
+.productInfo h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.productInfo h3 {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #333;
+}
+
+.productInfo p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #666;
+  margin-top: 8px;
+}
+
+.add-to-cart-button {
+  display: inline-block;
+  height: 50px;
+  width: 176px;
+  margin: 0 40px 0 16px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #49d2ff;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.6s ease;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.add-to-cart-button:hover {
+  /* Add your desired hover styles here */
+  background-color: red;
+}
+
+.filter_btns {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.all_btn,
+.tops_btn,
+.bottoms_btn,
+.accessory_btn,
+.shoes_btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #49d2ff;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: ease 0.8s all;
+}
+
+.all_btn:hover,
+.tops_btn:hover,
+.bottoms_btn:hover,
+.accessory_btn:hover,
+.shoes_btn:hover {
+  background-color: rgb(250, 159, 114);
+}
+
+.filter_btns {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .product_card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product_card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .productInfo {
+    margin: 8px 0;
+  }
+
+  .add-to-cart-button {
+    width: 100%;
+    margin: 16px 0;
+  }
+
+  .filter_btns {
+    flex-wrap: wrap;
+  }
+
+  .all_btn,
+  .tops_btn,
+  .bottoms_btn,
+  .accessory_btn,
+  .shoes_btn {
+    width: 50%;
+    margin: 5px;
+  }
+}

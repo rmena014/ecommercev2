@@ -1,0 +1,52 @@
+.nav_bar {
+  align-items: center;
+  justify-content: center;
+  z-index: 8;
+}
+
+.site_nav {
+  display: flex;
+  margin: 0 2px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.nav_links {
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+.nav_links:hover {
+  transform: scale(1.2);
+}
+/* For underline under nav links pseudoelement after was used */
+.nav_links::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: rgb(67, 150, 244);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav_links:hover::after {
+  width: 100%;
+}
+
+.nav_links a {
+  text-decoration: none;
+  font-size: 25px;
+  color: lightsalmon;
+  transition: all 1s ease;
+  font-family: "Rhodium Libre", serif;
+}
+
+.nav_links a:hover {
+  border-radius: 10px 10px 3px 5px;
+  color: rgb(255, 67, 67);
+}
